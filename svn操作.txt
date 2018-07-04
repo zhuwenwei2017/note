@@ -1,0 +1,20 @@
+设置开机启动
+1.将脚本的默认打开方式，改为终端
+2.修改脚本权限，sudo chmod 711 [脚本路径]
+3.将脚本文件，添加到开机启动中
+
+
+开启svn
+svnserve -d -r /Users/zhuwenwei/Documents/svn/y2015
+
+
+
+
+
+关闭svn
+1.得到进程号
+ps aux | grep svn
+2.关闭进程
+sudo kill -9 [进程号]
+
+
