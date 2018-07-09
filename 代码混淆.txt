@@ -1,0 +1,15 @@
+代码混淆
+2018/07/09
+代码混淆，使用的单词：
+get,set,push,start,stop,pause
+value,data,string,conf,length,size
+local,remote,long,short,old,new
+
+iOS安全攻防（二十三）：Objective-C代码混淆 - CSDN博客
+https://blog.csdn.net/yiyaaixuexi/article/details/29201699
+iOS马甲包混淆必过4.3审核上线解决方案
+https://zhuanlan.zhihu.com/p/38481422
+iOS代码混淆----自动 - 简书
+https://www.jianshu.com/p/0d42e5c6361c
+
+使用垃圾代码
