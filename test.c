@@ -1,10 +1,13 @@
 //#include <stc15w.h>
 #include <89c52.H>
 
-sbit BSW=P3^1;
-sbit ASW=P3^2;
-sbit Aout=P3^3;
-unsigned int fenzhong,xx;
+sbit BSW = P3^1;
+sbit ASW = P3^2;
+sbit Aout = P3^3;
+unsigned int millisecond;//毫秒
+unsigned int second;//秒
+int state_old;//老状态
+int state_new;//新状态
 void Timer0Init(void)       //1000??@12.000MHz
 {
     AUXR &= 0x7F;       //定时器0为12T模式
@@ -20,17 +23,81 @@ void Timer0Init(void)       //1000??@12.000MHz
 
 void main()
 {
-    Aout=0;
+    Aout = 0;
     Timer0Init();
-    EA=1;
-    ET0=1;//允许T0中断
+    EA = 1;
+    ET0 = 1;//允许T0中断
     while(1);
 }
 
+//1ms执行一次中断
 void Int2() interrupt 1 //???????0
 {
-    xx++;
-    if(xx==1000){
-        xx=0;P30=!P30;
+    millisecond++;
+    if(millisecond == 1000){
+        millisecond = 0;
+        second++;//+1秒
+        // P30 =! P30;
+    }
+    //保存之前的状态
+    state_old = state_new;
+    //获取新状态
+    if(ASW == 1 && BSW == 0){
+        state_new = 1;
+    }
+    else if(ASW == 1 && BSW == 1){
+        state_new = 2;
+    }
+    else if(ASW == 0 && BSW == 1){
+        state_new = 3;
+    }
+    else if(ASW == 0 && BSW == 0){
+        state_new = 4;
+    }
+    //现在的状态，和之前相同，则继续计数。否则清空计数，切换到新状态，重新计数
+    if(state_new == state_old){
+        switch(state_new)
+        {
+            case 1:
+                if(second <= 5){
+                    //[0秒, 5秒]
+                    Aout = 1;
+                }
+                else if(second <= 20*60*60){
+                    //(5秒, 20小时]
+                    Aout = 0;
+                }
+                else if(second <= 20*60*60+5){
+                    //(20小时, 20小时+5秒]
+                    Aout = 1;
+                }
+                else{
+                    //(20小时+5秒, +∞)
+                    Aout = 0;
+                    second == 20*60*60+5;//使输出不变
+                }
+                break;
+            case 2:
+                Aout = 0;
+                break;
+            case 3:
+                Aout = 0;
+                break;
+            case 4:
+                if(second <= 5){
+                    Aout = 1;
+                }else{
+                    Aout = 0;
+                    second = 5;//使输出不变
+                }
+                break;
+            default:
+                break;
+        }
+    }else{
+        millisecond = 0;
+        second = 0;
+        minute = 0;
+        hour = 0;
     }
 }
