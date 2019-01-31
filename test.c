@@ -44,14 +44,11 @@ void Int2() interrupt 1 //???????0
     //获取新状态
     if(ASW == 1 && BSW == 0){
         state_new = 1;
-    }
-    else if(ASW == 1 && BSW == 1){
+    }else if(ASW == 1 && BSW == 1){
         state_new = 2;
-    }
-    else if(ASW == 0 && BSW == 1){
+    }else if(ASW == 0 && BSW == 1){
         state_new = 3;
-    }
-    else if(ASW == 0 && BSW == 0){
+    }else if(ASW == 0 && BSW == 0){
         state_new = 4;
     }
     //现在的状态，和之前相同，则继续计数。否则清空计数，切换到新状态，重新计数
@@ -62,16 +59,13 @@ void Int2() interrupt 1 //???????0
                 if(second <= 5){
                     //[0秒, 5秒]
                     Aout = 1;
-                }
-                else if(second <= 20*60*60){
+                }else if(second <= 20*60*60){
                     //(5秒, 20小时]
                     Aout = 0;
-                }
-                else if(second <= 20*60*60+5){
+                }else if(second <= 20*60*60+5){
                     //(20小时, 20小时+5秒]
                     Aout = 1;
-                }
-                else{
+                }else{
                     //(20小时+5秒, +∞)
                     Aout = 0;
                     second = 20*60*60+6;//使输出不变
