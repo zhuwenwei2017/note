@@ -74,7 +74,7 @@ void Int2() interrupt 1 //???????0
                 else{
                     //(20小时+5秒, +∞)
                     Aout = 0;
-                    second == 20*60*60+5;//使输出不变
+                    second = 20*60*60+5;//使输出不变
                 }
                 break;
             case 2:
@@ -97,7 +97,5 @@ void Int2() interrupt 1 //???????0
     }else{
         millisecond = 0;
         second = 0;
-        minute = 0;
-        hour = 0;
     }
 }
