@@ -1,13 +1,26 @@
 //#include <stc15w.h>
+/*
+状态说明:
+上电检测：
+101，输入从a=0，输出b=0，输出1，延时5s输出0；
+102，输入从a=1，输入b=0，输出1，延时5s输出0，延时20小时输出1，延时5s输出 0；
+开关a变化：
+1，输入从a=0变1，输入b=0，输出1，延时5s输出0，延时20小时输出1，延时5s输出 0；
+2，输入从a=0变1，输入b=1，输出0,；
+3，输入从a=1变0，输出b=1，输出0；
+4，输入从a=1变0，输出b=0，输出1，延时5s输出0；
+*/
 #include <89c52.H>
-
-sbit BSW = P3^1;
-sbit ASW = P3^2;
+sbit ASW = P3^1;
+sbit BSW = P3^2;
 sbit Aout = P3^3;
 unsigned int millisecond;//毫秒
 unsigned int second;//秒
 int state_old;//老状态
 int state_new;//新状态
+int a_old;
+int a_new;
+int first_open;//上电
 void Timer0Init(void)       //1000??@12.000MHz
 {
     AUXR &= 0x7F;       //定时器0为12T模式
@@ -24,6 +37,8 @@ void Timer0Init(void)       //1000??@12.000MHz
 void main()
 {
     Aout = 0;
+    a_new = ASW;
+    first_open = 1;//上电
     Timer0Init();
     EA = 1;
     ET0 = 1;//允许T0中断
@@ -41,21 +56,39 @@ void Int2() interrupt 1 //???????0
     }
     //保存之前的状态
     state_old = state_new;
+    a_old = a_new;
+    a_new = ASW;
     //获取新状态
-    if(ASW == 1 && BSW == 0){
-        state_new = 1;
-    }else if(ASW == 1 && BSW == 1){
-        state_new = 2;
-    }else if(ASW == 0 && BSW == 1){
-        state_new = 3;
-    }else if(ASW == 0 && BSW == 0){
-        state_new = 4;
+    if(first_open == 1 && BSW == 0){
+        if(a_new == 0){
+            state_new = 101;
+        }else{
+            state_new = 102;
+        }
+    }else{
+        if(a_new != a_old){
+            first_open = 0;//a变化了，状态改变
+            if(a_new = 1){
+                if(BSW == 0){
+                    state_new = 1;
+                }else{
+                    state_new = 2;
+                }
+            }else{
+                if(BSW == 1){
+                    state_new = 3;
+                }else{
+                    state_new = 4;
+                }
+            }
+        }
     }
     //现在的状态，和之前相同，则继续计数。否则清空计数，切换到新状态，重新计数
     if(state_new == state_old){
         switch(state_new)
         {
             case 1:
+            case 102:
                 if(second <= 5){
                     //[0秒, 5秒]
                     Aout = 1;
@@ -72,12 +105,11 @@ void Int2() interrupt 1 //???????0
                 }
                 break;
             case 2:
-                Aout = 0;
-                break;
             case 3:
                 Aout = 0;
                 break;
             case 4:
+            case 101:
                 if(second <= 5){
                     Aout = 1;
                 }else{
