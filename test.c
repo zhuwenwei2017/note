@@ -35,7 +35,7 @@ void Timer0Init(void)       //1000??@12.000MHz
 }
 void WDTInit(void)
 {
-    WDT_CONTR = 0x36;//使能看门狗，预分频64
+    WDT_CONTR = 0x36;//使能看门狗，预分频128
 }
 
 void WDTFeed(void)
