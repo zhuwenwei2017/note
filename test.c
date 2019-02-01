@@ -68,7 +68,7 @@ void Int2() interrupt 1 //???????0
     }else{
         if(a_new != a_old){
             first_open = 0;//a变化了，状态改变
-            if(a_new = 1){
+            if(a_new == 1){
                 if(BSW == 0){
                     state_new = 1;
                 }else{
