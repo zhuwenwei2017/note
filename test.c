@@ -33,6 +33,15 @@ void Timer0Init(void)       //1000??@12.000MHz
     TF0 = 0;        //T0溢出中断标志，清零
     TR0 = 1;        //打开定时器0
 }
+void WDTInit(void)
+{
+    WDT_CONTR = 0x36;//使能看门狗，预分频64
+}
+
+void WDTFeed(void)
+{
+    WDT_CONTR = 0x36;//喂狗
+}
 
 void main()
 {
@@ -40,6 +49,7 @@ void main()
     a_new = ASW;
     first_open = 1;//上电
     Timer0Init();
+    WDTInit();
     EA = 1;
     ET0 = 1;//允许T0中断
     while(1);
@@ -53,6 +63,7 @@ void Int2() interrupt 1 //???????0
         millisecond = 0;
         second++;//+1秒
         // P30 =! P30;
+        WDTFeed();//喂狗
     }
     //保存之前的状态
     state_old = state_new;
