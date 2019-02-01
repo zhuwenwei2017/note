@@ -1,4 +1,4 @@
-//#include <stc15w.h>
+#include <stc15w.h>
 /*
 状态说明:
 上电检测：
@@ -10,7 +10,7 @@
 3，输入从a=1变0，输出b=1，输出0；
 4，输入从a=1变0，输出b=0，输出1，延时5s输出0；
 */
-#include <89c52.H>
+// #include <89c52.H>
 sbit ASW = P3^1;
 sbit BSW = P3^2;
 sbit Aout = P3^3;
@@ -70,27 +70,29 @@ void Int2() interrupt 1 //???????0
     a_old = a_new;
     a_new = ASW;
     //获取新状态
-    if(first_open == 1 && BSW == 0){
-        if(a_new == 0){
-            state_new = 101;
-        }else{
-            state_new = 102;
-        }
-    }else{
-        if(a_new != a_old){
-            first_open = 0;//a变化了，状态改变
-            if(a_new == 1){
-                if(BSW == 0){
-                    state_new = 1;
-                }else{
-                    state_new = 2;
-                }
+    if(first_open == 1){
+        // 上电
+        if(BSW == 0){
+            if(a_new == 0){
+                state_new = 101;
             }else{
-                if(BSW == 1){
-                    state_new = 3;
-                }else{
-                    state_new = 4;
-                }
+                state_new = 102;
+            }
+        }
+    }
+    if(a_new != a_old){
+        first_open = 0;//a变化了，状态改变
+        if(a_new == 1){
+            if(BSW == 0){
+                state_new = 1;
+            }else{
+                state_new = 2;
+            }
+        }else{
+            if(BSW == 1){
+                state_new = 3;
+            }else{
+                state_new = 4;
             }
         }
     }
