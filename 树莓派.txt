@@ -1,0 +1,26 @@
+树莓派3B+ 安装系统
+https://blog.csdn.net/kxwinxp/article/details/78370913
+    1.直接用mac，往sd卡写入系统
+
+
+树莓派笔记——初始化及系统设置（3）
+https://www.cnblogs.com/xuanxiaochen/p/5840402.html
+    1.树莓派软件源的设置。使用这个源：
+        清华大学
+        Raspbian http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
+    2.启动tightvnc服务器
+        vncserver :1
+        VNC客户端，输入地址: [树莓派的ip]:1
+
+
+系统镜像的下载地址:
+https://www.raspberrypi.org/downloads/
+VNC客户端的下载地址:
+https://www.realvnc.com/en/connect/download/viewer/macos/
+
+
+关机命令
+sudo halt
+查看IP地址的命令
+ifconfig
+
