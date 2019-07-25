@@ -7,7 +7,12 @@ https://blog.csdn.net/kxwinxp/article/details/78370913
 https://www.cnblogs.com/xuanxiaochen/p/5840402.html
     1.树莓派软件源的设置。使用这个源：
         清华大学
-        Raspbian http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
+        jessie版本(Debian 8):
+        deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib
+        wheezy版本(Debian 7):
+        deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
     2.启动tightvnc服务器
         vncserver :1
         VNC客户端，输入地址: [树莓派的ip]:1
