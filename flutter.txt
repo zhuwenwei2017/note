@@ -1,0 +1,8 @@
+创建web应用
+flutter create --web test_web_app
+自检
+flutter doctor
+flutter doctor -v
+
+
+
