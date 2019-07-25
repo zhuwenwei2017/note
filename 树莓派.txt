@@ -29,3 +29,30 @@ sudo halt
 查看IP地址的命令
 ifconfig
 
+拷贝文件，Mac->树莓派
+scp test.py pi@100.100.1.101:/home/pi/Desktop
+拷贝文件，树莓派->Mac
+scp pi@100.100.1.101:/home/pi/Desktop/test.py ./
+拷贝文件夹，Mac->树莓派
+scp -r pi_test pi@192.168.1.101:/home/pi/Desktop
+scp -r pi_test pi@172.16.200.125:/home/pi/Desktop
+拷贝文件夹，树莓派->Mac
+scp -r pi@192.168.1.101:/home/pi/Desktop/pi_test ./
+scp -r pi@172.16.200.125:/home/pi/Desktop/pi_test ./
+
+编译c代码
+gcc -Wall -o dht11 dht11.c -lwiringPi
+执行c代码
+./dht11
+
+摄像头分辨率: 2592*1944, 4:3
+
+使用VLC等来实现http的视屏流传输
+sudo raspivid -o - -rot 180 -t 0 -w 720 -h 360 -fps 30|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264 
+
+在树莓派上，Node.js和Npm
+https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
+npm install rpio2
+
+
+
