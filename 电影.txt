@@ -321,6 +321,7 @@
 2015/05/28, "魔法老师", "Absolutely Anything"
 2015/07/24, "像素大战", "Pixels"
 2015/09/17, "知无涯者", "The Man Who Knew Infinity"
+2015/11/13, "我的美国心", "My All American"
 --------------------------------------------
 2016/03/11, "我不是王毛"
 2016/04/27, "美国队长3", "Captain America: Civil War"
