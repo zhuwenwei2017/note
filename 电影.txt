@@ -312,10 +312,12 @@
 2014/12/19, "外星醉汉PK地球神", "PK"
 --------------------------------------------
 2015/01/25, "我和厄尔以及将死的女孩", "Me and Earl and the Dying Girl"
+2015/02/05, "男人与鸡", "基因兄弟", Mænd & høns"
 2015/04/22, "复仇者联盟2：奥创纪元", "Avengers: Age of Ultron"
 2015/05/14, "故事的故事", "Il racconto dei racconti", "The Tale of Tales"
 2015/05/15, "龙虾", "The Lobster"
 2015/05/17, "超新约全书", "Le tout nouveau testament"
+2015/05/21, "意外制造公司", "De Surprise"
 2015/05/28, "魔法老师", "Absolutely Anything"
 2015/07/24, "像素大战", "Pixels"
 2015/09/17, "知无涯者", "The Man Who Knew Infinity"
