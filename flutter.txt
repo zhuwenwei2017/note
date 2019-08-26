@@ -5,4 +5,14 @@ flutter doctor
 flutter doctor -v
 
 
+蘑菇云软件学习——Flutter第三课
+https://mp.weixin.qq.com/s?__biz=MzA5MjA1MzgyNQ==&mid=2651991564&idx=2&sn=28a785593b28f1524bcdd1788360163c&chksm=8b958622bce20f3432b75472e0b498728499da4ad6705cb366f7897f7c9d9f8bfdae95bff3e3&mpshare=1&scene=23&srcid=&sharer_sharetime=1564306693017&sharer_shareid=2c70cdfa9e39fab5d0b27679e60a3e81#rd
+
+
+2019/08/26
+状态管理
+provider
+https://pub.dev/packages/provider
+https://pub.dev/packages/shared_preferences
+
 
