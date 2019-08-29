@@ -1,0 +1,5 @@
+同步(拷贝)文件夹
+https://xvcat.com/post/903
+rsync -avPh www2 www3
+
+

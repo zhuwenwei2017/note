@@ -1,0 +1,6 @@
+重装 Mac OS X Capitan (Mac 降级安装老系统)
+https://www.jianshu.com/p/767fb908d30a
+
+mac系统安装盘
+sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/macos --applicationpath /Applications/Install\ macOS\ Sierra.app --nointeraction
+
