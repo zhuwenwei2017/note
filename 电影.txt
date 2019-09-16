@@ -90,6 +90,7 @@
 1995/02/04, "大话西游之仙履奇缘", "A Chinese Odyssey Part Two: Cinderella"
 1995/02/10, "阿呆闯学堂", "超龄插班生, "Billy Madison"
 1995/04/12, "和平饭店", "The Peace Hotel"
+1995/05/24, "勇敢的心", "Braveheart"
 1995/08/05, "霹雳火", "霹靂火"
 1995/08/19, "百变星君", "Sixty Million Dollar Man"
 1995/11/19, "玩具总动员", "Toy Story"
