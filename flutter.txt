@@ -16,3 +16,30 @@ https://pub.dev/packages/provider
 https://pub.dev/packages/shared_preferences
 
 
+2019/09/01
+示例项目地址：
+github liangdi
+flutter
+
+https://pub.flutter-io.cn/packages/flutter
+
+路由之间，相同内容
+hero widget
+
+dart语言
+
+http://pub.dev
+dio库
+
+github.com
+搜索flutter，有官方源码
+
+状态管理
+使用provider作为状态管理
+
+
+
+
+
+
+
