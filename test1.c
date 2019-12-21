@@ -11,7 +11,7 @@ sbit BSW = P3^2;
 sbit Aout = P3^3;
 unsigned int millisecond;//毫秒
 unsigned int second;//秒
-#define delay_second 5;//延迟5秒
+#define delay_second 5//延迟5秒
 void Timer0Init(void)       //1000??@12.000MHz
 {
     AUXR &= 0x7F;       //定时器0为12T模式
