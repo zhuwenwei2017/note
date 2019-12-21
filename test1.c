@@ -54,5 +54,7 @@ void Int2() interrupt 1 //???????0
     }
     if(second >= delay_second){
         R0 = 0;        //关闭定时器0T
+        EA = 0;//关中断
+        ET0 = 0;//关闭T0中断
     }
 }
