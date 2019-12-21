@@ -32,7 +32,7 @@ void main()
     EA = 1;
     ET0 = 1;//允许T0中断
     while(1){
-        if(second > delay_second){
+        if(second >= delay_second){
             if(ASW == 0){
                 Aout = 0;
             }else{
@@ -52,9 +52,7 @@ void Int2() interrupt 1 //???????0
         millisecond = 0;
         second++;//+1秒
     }
-    if(second <= delay_second){
-        //[0秒, 5秒]
-    }else{
+    if(second >= delay_second){
         R0 = 0;        //关闭定时器0T
     }
 }
