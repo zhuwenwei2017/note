@@ -22,7 +22,7 @@ void Timer0Init(void)       //1000??@12.000MHz
     TL0 = 0x18;     //给定时器赋初值，定时1ms
     TH0 = 0xFC;     //??????
     TF0 = 0;        //T0溢出中断标志，清零
-    R0 = 1;        //打开定时器0T
+    TR0 = 1;        //打开定时器0T
 }
 
 void main()
@@ -53,7 +53,7 @@ void Int2() interrupt 1 //???????0
         second++;//+1秒
     }
     if(second >= delay_second){
-        R0 = 0;        //关闭定时器0T
+        TR0 = 0;        //关闭定时器0T
         EA = 0;//关中断
         ET0 = 0;//关闭T0中断
     }
