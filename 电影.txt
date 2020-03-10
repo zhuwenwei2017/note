@@ -128,6 +128,7 @@
 2001/04/04, "卢浮魅影", "Belphegor, Phantom of the Louvre"
 2001/05/09, "梦断花", "情陷红磨坊", "Moulin Rouge!"
 2001/06/01, "人面兽心", "The Animal"
+2001/06/08, "进化危机", "Evolution"
 2001/07/12, "少林足球", "Shaolin Soccer"
 2001/07/13, "律政俏佳人", "Legally Blonde"
 2001/09/01, "星际牛仔：天国之门", "カウボーイビバップ 天国の扉"
