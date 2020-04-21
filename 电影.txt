@@ -291,6 +291,7 @@
 2012/01/23, "海岸大捕怪", "Grabbers"
 2012/02/02, "孙子从美国来", "A Grandson from America"
 2012/02/21, "穿越火线", "Август. Восьмого"
+2012/03/09, "林中小屋", "The Cabin in the Woods"
 2012/04/25, "复仇者联盟", "Marvel's The Avengers"
 2012/05/04, "复仇者联盟", "The Avengers"
 2012/06/08, "马达加斯加3", "Madagascar 3: Europe's Most Wanted"
