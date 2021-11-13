@@ -570,6 +570,7 @@
 2016/07/02, "Rewrite", "リライト"
 2016/07/03, "情热传说 the X", "テイルズ オブ ゼスティリア ザ クロス", "Tales of Zestiria the X"
 2016/07/04, "TABOO TATTOO－禁忌咒纹－", "タブー・タトゥー"
+2016/07/04, "天真与闪电", "甘々と稲妻", "Sweetness and Lightning"
 2016/07/05, "魔装学园H×H", "魔装学園H×H"
 2016/07/07, "星之梦", "planetarian ～ちいさなほしのゆめ～", "planetarian ~the reverie of a little planet~"
 2016/07/08, "半田君传说", "はんだくん"
