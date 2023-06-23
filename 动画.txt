@@ -92,6 +92,7 @@
 1987/07/03, "变形金刚08动画：头领战士", "トランスフォーマー ザ☆ヘッドマスターズ", "Transformers: The Headmasters"
 1987/09/18, "唐老鸭俱乐部", "DuckTales"
 1987/12/14, "忍者神龟", "Teenage Mutant Ninja Turtles"
+1987/12/16, "金属外壳MADOX-01", "メタルスキンパニック MADOX-01", "Metal Skin Panic MADOX-01"
 --------------------------------------------
 1988, "加菲猫", "Garfield And Friends"
 1988, "丹佛，最后的恐龙", "Denver, the Last Dinosaur"
