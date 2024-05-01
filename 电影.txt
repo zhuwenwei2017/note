@@ -397,6 +397,7 @@
 2023/02/06, "蚁人与黄蜂女：量子狂潮", "Ant-Man and the Wasp: Quantumania"
 2023/04/22, "银河护卫队3", "Guardians of the Galaxy Vol. 3"
 2023/06/09, "变形金刚：超能勇士崛起", "Transformers: Rise of the Beasts"
+2023/10/06, "周处除三害", "The Pig, The Snake and The Pigeon"
 2023/11/16, "饥饿游戏：鸣鸟与蛇之歌", "The Hunger Games: The Ballad of Songbirds and Snakes"
 --------------------------------------------
 
