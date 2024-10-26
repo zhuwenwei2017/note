@@ -849,6 +849,7 @@
 2019/11/29, "HUMAN LOST 人间失格"
 2019/12/03, "OBSOLETE"
 --------------------------------------------
+2020/01/07, "成群结伴！西顿学园", "群れなせ！シートン学園", "Seton Academy: Join the Pack!"
 2020/01/08, "空挺Dragons", "空挺ドラゴンズ", "Drifting Dragons"
 2020/01/08, "星掠者", "プランダラ", "Plunderer"
 2020/01/09, "〈Infinite Dendrogram〉-无尽连锁-", "<Infinite Dendrogram>-インフィニット・デンドログラム-"
