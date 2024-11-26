@@ -327,6 +327,7 @@
 2013/10/31, "安德的游戏", "Ender's Game"
 2013/11/01, "达拉斯买家俱乐部", "Dallas Buyers Club"
 2013/11/17, "昆虫总动员", "Minuscule: la Vallée des Fourmis Perdues"
+2013/12/14, "武士的食谱", "武士の献立"
 2013/12/19, "私人订制", "Personal Tailor"
 --------------------------------------------
 2014/03/13, "美国队长2", "Captain America: The Winter Soldier"
