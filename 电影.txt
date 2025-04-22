@@ -299,6 +299,7 @@
 2012/03/09, "林中小屋", "The Cabin in the Woods"
 2012/04/25, "复仇者联盟", "Marvel's The Avengers"
 2012/05/04, "复仇者联盟", "The Avengers"
+2012/05/05, "宇宙兄弟", "Space Brothers"
 2012/06/08, "马达加斯加3", "Madagascar 3: Europe's Most Wanted"
 2012/06/14, "饥饿游戏", "The Hunger Games"
 2012/06/15, "爸爸的好儿子", "That's My Boy"
