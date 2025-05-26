@@ -356,6 +356,7 @@
 2015/02/05, "男人与鸡", "基因兄弟", Mænd & høns"
 2015/03/04, "超能查派", "Chappie"
 2015/03/16, "航时凶间", "The Diabolical"
+2015/03/21, "暗杀教室", "暗殺教室", "Assassination Classroom"
 2015/04/22, "复仇者联盟2：奥创纪元", "Avengers: Age of Ultron"
 2015/05/14, "故事的故事", "Il racconto dei racconti", "The Tale of Tales"
 2015/05/15, "龙虾", "The Lobster"
@@ -367,6 +368,7 @@
 2015/11/13, "我的美国心", "My All American"
 --------------------------------------------
 2016/03/11, "我不是王毛"
+2016/03/25, "暗杀教室 毕业篇", "暗殺教室 卒業編", "Assassination Classroom: Graduation"
 2016/04/27, "美国队长3", "Captain America: Civil War"
 2016/05/12, "保持站立", "Rester vertical"
 2016/06/25, "地狱那有那么HIGH", "若くして死ぬ", "TOO YOUNG TO DIE! "
