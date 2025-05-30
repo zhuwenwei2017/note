@@ -332,6 +332,7 @@
 2013/10/30, "雷神2：黑暗世界", "Thor: The Dark World"
 2013/10/31, "安德的游戏", "Ender's Game"
 2013/11/01, "达拉斯买家俱乐部", "Dallas Buyers Club"
+2013/11/09, "风俗店之行改变了我的人生", "風俗行ったら人生変わったwww"
 2013/11/17, "昆虫总动员", "Minuscule: la Vallée des Fourmis Perdues"
 2013/12/14, "武士的食谱", "武士の献立"
 2013/12/19, "私人订制", "Personal Tailor"
